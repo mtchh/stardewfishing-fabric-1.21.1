@@ -3,11 +3,16 @@
   "id": "stardew_fishing",
   "version": "${version}",
   "name": "stardewfishing-fabric",
-  "description": "FTB Quests animation interface",
-  "authors": [],
-  "contact": {},
+  "description": "Making fishing fun with a minigame directly inspired by Stardew Valley(fabric version of Stardew Fishing)!",
+  "authors": [
+    "kltyton"
+  ],
+  "contact": {
+    "website": "https://github.com/kltyton/stardewfishing-fabric",
+    "repo": "https://github.com/kltyton/stardewfishing-fabric"
+  },
   "license": "LGPL-3.0",
-  "icon": "assets/stardewfishing-fabric/icon.png",
+  "icon": "assets/stardew_fishing/icon.png",
   "environment": "*",
   "entrypoints": {
     "client": [
@@ -23,7 +28,7 @@
   "depends": {
     "fabricloader": ">=${loader_version}",
     "fabric": "*",
-    "minecraft": "${minecraft_version}"
+    "minecraft": ">=${minecraft_version}"
   },
   "accessWidener" : "stardewfishing-fabric.accesswidener"
 }
