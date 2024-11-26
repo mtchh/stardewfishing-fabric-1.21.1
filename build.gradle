@@ -12,6 +12,12 @@ base {
 
 
 repositories {
+    maven {
+        url "https://cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
+    }
     maven { url = "https://mvn.devos.one/releases/" }
     maven {
         name = 'ParchmentMC'
@@ -33,6 +39,7 @@ dependencies {
     }
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+    modCompileOnly "curse.maven:fishing-real-348834:5273530"
 }
 
 processResources {
