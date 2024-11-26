@@ -11,7 +11,7 @@
     "website": "https://github.com/kltyton/stardewfishing-fabric",
     "repo": "https://github.com/kltyton/stardewfishing-fabric"
   },
-  "license": "LGPL-3.0",
+  "license": "MIT",
   "icon": "assets/stardew_fishing/icon.png",
   "environment": "*",
   "entrypoints": {
