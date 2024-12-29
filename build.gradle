@@ -40,6 +40,7 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
     modCompileOnly "curse.maven:fishing-real-348834:5273530"
+    modCompileOnly "curse.maven:jobsaddon-682362:5043002"
 }
 
 processResources {

@@ -1,9 +1,7 @@
 package com.kltyton.stardewfishingFabric;
 
-// 导入必要的包和类
 import com.kltyton.stardewfishingFabric.common.CommonEvents;
 import com.kltyton.stardewfishingFabric.common.networking.C2SCompleteMinigamePacket;
-import com.kltyton.stardewfishingFabric.common.networking.SFNetworking;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.registry.FabricRegistryBuilder;
 import net.minecraft.core.Registry;
@@ -14,7 +12,6 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 
-// 实现ModInitializer接口，用于初始化模组
 public class StardewfishingFabric implements ModInitializer {
     /*
         常量定义
@@ -41,7 +38,6 @@ public class StardewfishingFabric implements ModInitializer {
     public void onInitialize() {
         C2SCompleteMinigamePacket.register();
         CommonEvents.initialize();
-        SFNetworking.register();
         // 注册声音事件到注册表
         registerSoundEvent("cast", CAST);
         registerSoundEvent("complete", COMPLETE);

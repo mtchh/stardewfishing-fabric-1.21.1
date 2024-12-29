@@ -20,7 +20,10 @@ public class FishingRodItemMixin {
                     target = "Lnet/minecraft/world/level/Level;playSound(Lnet/minecraft/world/entity/player/Player;DDDLnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;FF)V",
                     ordinal = 0))
     private void redirectPlaySoundFirst(Level instance, Player player, double x, double y, double z, SoundEvent sound, SoundSource category, float volume, float pitch) {
-        Player nearestPlayer = Minecraft.getInstance().level.getNearestPlayer(x, y, z, 1, false);
+        Player nearestPlayer = null;
+        if (Minecraft.getInstance().level != null) {
+            nearestPlayer = Minecraft.getInstance().level.getNearestPlayer(x, y, z, 1, false);
+        }
         if (nearestPlayer != null && nearestPlayer.fishing instanceof FishingHook) {
             FishingHook fishingHook = nearestPlayer.fishing;
 

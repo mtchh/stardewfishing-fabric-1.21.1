@@ -1,13 +1,11 @@
 package com.kltyton.stardewfishingFabric.client;
 
-// 导入必要的包和类
 import com.kltyton.stardewfishingFabric.StardewfishingFabric;
 import com.kltyton.stardewfishingFabric.common.FishBehavior;
 import net.minecraft.util.Mth;
 
 import java.util.Random;
 
-// 定义钓鱼迷你游戏的逻辑
 public class FishingMinigame {
     // 完成小游戏所需的分数
     public static final int POINTS_TO_FINISH = 120;

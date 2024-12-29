@@ -18,6 +18,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.core.registries.BuiltInRegistries;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import net.fabricmc.fabric.api.resource.IdentifiableResourceReloadListener;
 import java.io.*;
@@ -47,7 +48,7 @@ public class FishBehaviorReloadListener extends SimplePreparableReloadListener<M
     }
 
     @Override
-    protected Map<String, JsonObject> prepare(ResourceManager pResourceManager, ProfilerFiller pProfiler) {
+    protected @NotNull Map<String, JsonObject> prepare(ResourceManager pResourceManager, ProfilerFiller pProfiler) {
         Map<String, JsonObject> objects = new HashMap<>();
         for (Resource resource : pResourceManager.getResourceStack(LOCATION)) {
             try (InputStream inputstream = resource.open();

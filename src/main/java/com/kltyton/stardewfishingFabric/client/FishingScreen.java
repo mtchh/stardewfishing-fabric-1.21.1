@@ -1,6 +1,5 @@
 package com.kltyton.stardewfishingFabric.client;
 
-// 导入必要的包和类
 import com.kltyton.stardewfishingFabric.StardewfishingFabric;
 import com.kltyton.stardewfishingFabric.client.util.Animation;
 import com.kltyton.stardewfishingFabric.client.util.RenderUtil;
@@ -20,11 +19,8 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.util.Mth;
 import org.lwjgl.glfw.GLFW;
 
-// 定义钓鱼迷你游戏的屏幕
 public class FishingScreen extends Screen {
-    // 屏幕标题
     private static final Component TITLE = Component.literal("钓鱼小游戏");
-    // 小游戏纹理资源位置
     private static final ResourceLocation TEXTURE = new ResourceLocation(StardewfishingFabric.MODID, "textures/minigame.png");
 
     // GUI尺寸常量
@@ -127,9 +123,7 @@ public class FishingScreen extends Screen {
                 RenderUtil.fillF(pGuiGraphics, leftPos + 33, topPos + 148, leftPos + 37, topPos + 148 - progress * 145, 0, color);
 
                 // draw 处理
-                RenderUtil.drawRotatedAround(poseStack, handleRot.getInterpolated(partialTick), leftPos + 6.5F, topPos + 130.5F, () -> {
-                    pGuiGraphics.blit(TEXTURE, leftPos + 5, topPos + 129, 47, 0, 8, 3);
-                });
+                RenderUtil.drawRotatedAround(poseStack, handleRot.getInterpolated(partialTick), leftPos + 6.5F, topPos + 130.5F, () -> pGuiGraphics.blit(TEXTURE, leftPos + 5, topPos + 129, 47, 0, 8, 3));
 
                 // render 完美!
                 if (status == Status.SUCCESS && accuracy == 1) {

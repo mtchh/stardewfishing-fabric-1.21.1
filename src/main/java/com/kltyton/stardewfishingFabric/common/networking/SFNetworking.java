@@ -31,8 +31,6 @@ public class SFNetworking {
         ServerPlayNetworking.registerGlobalReceiver(COMPLETE_MINIGAME_PACKET_ID, (server, player, handler, buf, responseSender) -> {
             boolean success = buf.readBoolean();
             double accuracy = success ? buf.readDouble() : -1;
-
-            // 假设你有方法从 buf 中获取 hook 和 items
             FishingHook hook = FishingDataStorage.getHookForPlayer(player);
             ItemStack items = FishingDataStorage.getItemsForPlayer(player);
 
