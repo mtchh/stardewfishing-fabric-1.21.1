@@ -1,6 +1,8 @@
 # Stardew Fishing (Fabric)
 
-**I vibe coded this for my gf**
+_Originally ported to fabric by [kltyton](https://github.com/kltyton) • Updated for 1.21.1_
+
+**I vibe coded this 1.21.1 update port for my gf**
 
 [![Modrinth](https://img.shields.io/modrinth/dt/stardew-fishing-fabric?logo=modrinth&label=modrinth&color=1bd96a)](https://modrinth.com/mod/stardew-fishing-fabric)
 [![Minecraft](https://img.shields.io/badge/minecraft-1.21.1-brightgreen.svg)](https://minecraft.net)
@@ -58,8 +60,3 @@ The mod uses a data-driven configuration system via `data.json`. You can customi
 
 This project is licensed under the [MIT License](LICENSE).
 
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit issues or pull requests.
-
-_Originally ported to fabric by [kltyton](https://github.com/kltyton) • Updated for 1.21.1_
