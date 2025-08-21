@@ -24,6 +24,7 @@ atlassian-ide-plugin.xml
 
 # Package Files #
 *.jar
+!build/libs/*.jar
 *.war
 *.nar
 *.ear
@@ -102,7 +103,9 @@ $RECYCLE.BIN/
 *.lnk
 
 .gradle
-build/
+# build/ - Allow build directory so people can download jar files
+# Comment out to include compiled jars:
+# build/
 
 # Ignore Gradle GUI config
 gradle-app.setting
@@ -110,7 +113,9 @@ gradle-app.setting
 # Cache of project
 .gradletasknamecache
 
-**/build/
+# **/build/ - Allow build directories for jar downloads
+# Comment out to include compiled jars:
+# **/build/
 
 # Common working directory
 run/
