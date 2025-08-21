@@ -103,9 +103,10 @@ $RECYCLE.BIN/
 *.lnk
 
 .gradle
-# build/ - Allow build directory so people can download jar files
-# Comment out to include compiled jars:
-# build/
+build/
+# Allow only the final jar files for download
+!build/libs/
+!build/libs/*.jar
 
 # Ignore Gradle GUI config
 gradle-app.setting
@@ -113,9 +114,11 @@ gradle-app.setting
 # Cache of project
 .gradletasknamecache
 
-# **/build/ - Allow build directories for jar downloads
-# Comment out to include compiled jars:
-# **/build/
+# **/build/ - Keep this to ignore nested build directories
+**/build/
+# Allow jar files in any build/libs directory
+!**/build/libs/
+!**/build/libs/*.jar
 
 # Common working directory
 run/
