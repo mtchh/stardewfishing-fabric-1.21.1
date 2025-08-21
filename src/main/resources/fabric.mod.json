@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "stardew_fishing",
+  "version": "${version}",
+  "name": "stardewfishing-fabric",
+  "description": "Making fishing fun with a minigame directly inspired by Stardew Valley(fabric version of Stardew Fishing)!",
+  "authors": ["kltyton"],
+  "contact": {
+    "website": "https://github.com/kltyton/stardewfishing-fabric",
+    "repo": "https://github.com/kltyton/stardewfishing-fabric"
+  },
+  "license": "MIT",
+  "icon": "assets/stardew_fishing/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": ["com.kltyton.stardewfishingFabric.client.ClientEvents"],
+    "main": ["com.kltyton.stardewfishingFabric.StardewfishingFabric"]
+  },
+  "mixins": ["stardewfishing-fabric.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.17.2",
+    "fabric-api": "*",
+    "minecraft": "1.21.1"
+  },
+  "accessWidener": "stardewfishing-fabric.accesswidener"
+}
